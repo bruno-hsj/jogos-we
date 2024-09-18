@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tela-jogo{
+    width: 100vh;
+    height: 100vh;
+    margin: 0 auto;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+/*.movimento-cenario{
+    display: flex;
+    width: calc(200%);
+    animation: movimento-cenario-frame 10s linear infinite;
+}
+*/
+
+#cenario{
+    width: calc(200%);
+    height: 100%;
+    display: flex;
+    position: absolute;
+    animation: movimento-cenario-frame 10s linear infinite;
+    border-bottom: 3px solid green;
+}
+
+
+#mario{
+    width: 100px;
+    position: relative;
+    bottom: -85%;
+}
+
+#cano{
+    width: 50px;
+    position: relative;
+    bottom: -86%;
+    animation: movimento 2s linear infinite;
+    
+}
+
+
+@keyframes movimento{
+    from{
+        right: -500px;    
+    } 
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes movimento-cenario-frame{
+    from{
+        transform: translateX(0);    
+    } 
+    to {
+        transform: translateX(-50%);
+    }
+}

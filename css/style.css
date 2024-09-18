@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+
+    background: rgb(120, 198, 235);
+	background: linear-gradient(180deg,
+	rgb(120, 198, 235)5%,
+	rgb(178, 242, 255)100%);
+}
+
+header{
+    display: flex;
+    margin: 3;
+    flex-wrap: wrap;
+    flex: 1 1 100vh;
+}
+
+
+
+main{
+    align-items: center;
+    text-align: center;
+    
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
